@@ -14,16 +14,42 @@ header {
     background-color: #007bff;
     color: #fff;
     padding: 20px 0;
+    position: relative; /* Necessário para o posicionamento da navbar */
 }
 
 header h1 {
-    margin: 0;
+    margin-top: 35px;
     font-size: 2.5em;
 }
 
 header p {
     margin: 10px 0 0;
     font-size: 1.2em;
+}
+
+/* Navbar */
+nav {
+    background-color: #0056b3; /* Cor de fundo da navbar */
+    overflow: hidden;
+    position: absolute; /* Posiciona a navbar no topo do cabeçalho */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #003d7a; /* Cor de fundo ao passar o mouse */
+    color: #fff;
 }
 
 /* Principal */
@@ -41,6 +67,154 @@ main section h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #007bff;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    flex-direction: column; /* Alinha os containers verticalmente */
+    gap: 20px; /* Espaço entre os containers */
+}
+
+/* Seções do curso */
+.course {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left; /* Alinha o texto à esquerda dentro da seção do curso */
+}
+
+.course h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* Row containers for Quarters */
+.quarters-row {
+    display: flex;
+    flex-direction: row; /* Garante que os quarters fiquem lado a lado */
+    justify-content: space-between; /* Espaço entre os quarters */
+    width: 100%; /* Ocupa toda a largura do container pai */
+}
+
+.quarter {
+    width: 48%; /* Cada quarter ocupa 48% da largura do row */
+    background-color: #fff; /* Fundo branco para cada quarter */
+    border: 1px solid #ddd; /* Borda leve */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    border-radius: 8px; /* Cantos arredondados para consistência */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05); /* Sombra sutil para destaque */
+}
+
+/* Tabela de status dos testes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.completed {
+    background-color: #d4edda !important; /* Verde claro */
+}
+
+.incomplete {
+    background-color: #f8d7da !important; /* Vermelho claro */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Resumo do ano */
+.summary {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: left; /* Alinha o texto à esquerda dentro do resumo */
+    border-radius: 8px; /* Cantos arredondados para consistência */
+}
+
+.summary h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.summary p {
+    margin: 10px 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* FAQ (Adaptado do CSS fornecido) */
+.faq {
+    text-align: left; /* Alinha o texto à esquerda para melhor legibilidade */
+}
+
+.faq h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left; /* Alinha o texto à esquerda dentro da seção de FAQ */
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.faq-item p {
+    margin-bottom: 10px;
+}
+
+/* Listas Ordenadas (FAQ) */
+.faq-item ol {
+    padding-left: 0; /* Remove a indentação padrão */
+    margin: 0; /* Remove a margem padrão */
+    list-style-position: inside; /* Faz com que os números/pontos estejam dentro da caixa de texto */
+}
+
+.faq-item ol li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    padding-left: 20px; /* Adiciona espaço para a numeração/ponto */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 /* Imagens */
@@ -73,17 +247,4 @@ main section ul li a {
 
 main section ul li a:hover {
     text-decoration: underline;
-}
-
-/* Rodapé */
-footer {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1em;
 }
