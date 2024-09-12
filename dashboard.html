@@ -9,180 +9,194 @@
 <body>
     <header>
         <nav>
-            <a href="/index.html">Home</a>
+            <a href="/index.html">HomePage</a>
             <a href="/profile.html">My Profile</a>
             <a href="/faq.html">FAQ</a>
         </nav>
         <h1>Study Dashboard</h1>
         <p>Here you can track your study progress</p>  
     </header>
-    <main>
-        <section>
-            <h2>Study Monitor</h2>
-            <div class="dashboard">
-                <!-- First container: Quarters 1 and 2 side by side -->
-                <div class="quarters-row">
-                    <div class="quarter" id="q1">
-                        <h4>Quarter 1</h4>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Course</th>
-                                    <th>Exam</th>
-                                    <th>Credits Grade</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="completed">
-                                    <td>PCO</td>
-                                    <td>Presentation</td>
-                                    <td>5 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr class="completed">
-                                    <td>Computer Science</td>
-                                    <td>Written Knowledge</td>
-                                    <td>4 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr class="incomplete">
-                                    <td>Programming</td>
-                                    <td>Case Study</td>
-                                    <td>3 EC</td>
-                                    <td>Incompleted</td>
-                                </tr>
-                                <tr class="completed">
-                                    <td>PPDE</td>
-                                    <td>Interview</td>
-                                    <td>6 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="quarter" id="q2">
-                        <h4>Quarter 2</h4>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Course</th>
-                                    <th>Exam</th>
-                                    <th>Credits Grade</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="completed">
-                                    <td>OOP</td>
-                                    <td>Presentation</td>
-                                    <td>5 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr class="incomplete">
-                                    <td>OOP</td>
-                                    <td>Written Knowledge</td>
-                                    <td>2 EC</td>
-                                    <td>Incompleted</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
 
-                <!-- Second container: Quarters 3 and 4 side by side -->
-                <div class="quarters-row">
-                    <div class="quarter" id="q3">
-                        <h4>Quarter 3</h4>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Course</th>
-                                    <th>Exam</th>
-                                    <th>Credits Grade</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="completed">
-                                    <td>Business IT Consultancy</td>
-                                    <td>Video</td>
-                                    <td>4 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr class="completed">
-                                    <td>Framework Project 1</td>
-                                    <td>Database Exam</td>
-                                    <td>5 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr class="incomplete">
-                                    <td>Framework Project 1</td>
-                                    <td>Group Portfolio</td>
-                                    <td>3 EC</td>
-                                    <td>Incompleted</td>
-                                </tr>
-                                <tr class="completed">
-                                    <td>Framework Project 1</td>
-                                    <td>Group Presentation</td>
-                                    <td>6 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr class="incomplete">
-                                    <td>Framework Project 1</td>
-                                    <td>On-Site Case Study</td>
-                                    <td>2 EC</td>
-                                    <td>Incompleted</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="quarter" id="q4">
-                        <h4>Quarter 4</h4>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Course</th>
-                                    <th>Exam</th>
-                                    <th>Credits Grade</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="completed">
-                                    <td>Framework Project 2</td>
-                                    <td>Final Group Delivery</td>
-                                    <td>5 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr class="completed">
-                                    <td>Framework Project 2</td>
-                                    <td>Individual Project Assessment</td>
-                                    <td>4 EC</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr class="incomplete">
-                                    <td>Framework Project 2</td>
-                                    <td>IT Development Portfolio</td>
-                                    <td>3 EC</td>
-                                    <td>Incompleted</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="https://www.hz.nl" target="_blank">HZ Website</a></li>
+                <li><a href="https://www.github.com/ghenriques11" target="_blank">My GitHub Repository</a></li>
+                <li><a href="https://www.instagram.com/guilhermehenriques.11" target="_blank">My Instagram</a></li>
+            </ul>
+        </aside>
 
-                <!-- Third container: Summary information -->
-                <div class="summary">
-                    <h3>Yearly Summary</h3>
-                    <p>Total Credits Obtained: <span id="obtained-credits">55 EC</span></p>
-                    <p>Credits Required: 10 EC</p>
-                    <p>Credits to be Completed: <span id="credits-remaining">65 EC</span></p>
-                    <p>NBSA Boundary: <span id="nbsa-boundary">45 EC</span></p>
+        <!-- Main Content -->
+        <main class="main-content">
+            <section>
+                <h2>Study Monitor</h2>
+                <div class="dashboard">
+                    <!-- First container: Quarters 1 and 2 side by side -->
+                    <div class="quarters-row">
+                        <div class="quarter" id="q1">
+                            <h4>Quarter 1</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Exam</th>
+                                        <th>Credits Grade</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="completed">
+                                        <td>PCO</td>
+                                        <td>Presentation</td>
+                                        <td>5 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr class="completed">
+                                        <td>Computer Science</td>
+                                        <td>Written Knowledge</td>
+                                        <td>4 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr class="incomplete">
+                                        <td>Programming</td>
+                                        <td>Case Study</td>
+                                        <td>3 EC</td>
+                                        <td>Incompleted</td>
+                                    </tr>
+                                    <tr class="completed">
+                                        <td>PPDE</td>
+                                        <td>Interview</td>
+                                        <td>6 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="quarter" id="q2">
+                            <h4>Quarter 2</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Exam</th>
+                                        <th>Credits Grade</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="completed">
+                                        <td>OOP</td>
+                                        <td>Presentation</td>
+                                        <td>5 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr class="incomplete">
+                                        <td>OOP</td>
+                                        <td>Written Knowledge</td>
+                                        <td>2 EC</td>
+                                        <td>Incompleted</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Second container: Quarters 3 and 4 side by side -->
+                    <div class="quarters-row">
+                        <div class="quarter" id="q3">
+                            <h4>Quarter 3</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Exam</th>
+                                        <th>Credits Grade</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="completed">
+                                        <td>Business IT Consultancy</td>
+                                        <td>Video</td>
+                                        <td>4 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr class="completed">
+                                        <td>Framework Project 1</td>
+                                        <td>Database Exam</td>
+                                        <td>5 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr class="incomplete">
+                                        <td>Framework Project 1</td>
+                                        <td>Group Portfolio</td>
+                                        <td>3 EC</td>
+                                        <td>Incompleted</td>
+                                    </tr>
+                                    <tr class="completed">
+                                        <td>Framework Project 1</td>
+                                        <td>Group Presentation</td>
+                                        <td>6 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr class="incomplete">
+                                        <td>Framework Project 1</td>
+                                        <td>On-Site Case Study</td>
+                                        <td>2 EC</td>
+                                        <td>Incompleted</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="quarter" id="q4">
+                            <h4>Quarter 4</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Exam</th>
+                                        <th>Credits Grade</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="completed">
+                                        <td>Framework Project 2</td>
+                                        <td>Final Group Delivery</td>
+                                        <td>5 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr class="completed">
+                                        <td>Framework Project 2</td>
+                                        <td>Individual Project Assessment</td>
+                                        <td>4 EC</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr class="incomplete">
+                                        <td>Framework Project 2</td>
+                                        <td>IT Development Portfolio</td>
+                                        <td>3 EC</td>
+                                        <td>Incompleted</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Third container: Summary information -->
+                    <div class="summary">
+                        <h3>Yearly Summary</h3>
+                        <p>Total Credits Obtained: <span id="obtained-credits">55 EC</span></p>
+                        <p>Credits Required: 10 EC</p>
+                        <p>Credits to be Completed: <span id="credits-remaining">65 EC</span></p>
+                        <p>NBSA Boundary: <span id="nbsa-boundary">45 EC</span></p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>&copy; 2024 Guilherme Henriques. All rights reserved.</p>
     </footer>

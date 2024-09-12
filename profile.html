@@ -9,38 +9,67 @@
 <body>
     <header>
         <nav>
-            <a href="/index.html">Homepage</a>
+            <a href="/index.html">HomePage</a>
             <a href="/dashboard.html">Study Dashboard</a>
             <a href="/faq.html">FAQ</a>
         </nav>
         <h1>Welcome to My Profile</h1>
-        <p>Discover more about who I am and what I enjoy!</p>
+        <p>Discover more about who I am, my skills, and my work!</p>
     </header>
-    <main>
-        <a href="/" > Read Me</a>
-        <section>
-            <h2>About Me</h2>
-            <img src="images/profile.png" alt="Guilherme Henriques">
-            <p>Hello! My name is Guilherme Henriques, I'm 22 years old, and I'm from the beautiful island of Madeira in Portugal. I have a deep passion for technology and have been exploring the world of programming and ICT since high school.</p>
-            <p>In my free time, I enjoy immersing myself in various hobbies, including playing sports and video games. Being from an island, I also have a strong affinity for the beach and particularly enjoy engaging in water sports.</p>
-        </section>
-        <section>
-            <h2>My Characteristics</h2>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
             <ul>
-                <li>Passionate about technology</li>
-                <li>Curious and always learning</li>
-                <li>Resilient and determined</li>
-                <li>Creative problem-solver</li>
+                <li><a href="https://www.hz.nl" target="_blank">HZ Website</a></li>
+                <li><a href="https://www.github.com/ghenriques11" target="_blank">My GitHub Repository</a></li>
+                <li><a href="https://www.instagram.com/guilhermehenriques.11" target="_blank">My Instagram</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Connect with Me</h2>
-            <ul>
-                <li><a href="https://github.com/ghenriques11" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://instagram.com/guilhermehenriques.11" target="_blank">Instagram</a></li>
-            </ul>
-        </section>
-    </main>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="sections-container">
+                <!-- About Me Section -->
+                <section id="about-me" class="container">
+                    <h2>About Me</h2>
+                    <img src="images/profile.png" alt="Guilherme Henriques">
+                    <p>Hello! My name is Guilherme Henriques, I'm 22 years old, and I'm from Madeira, Portugal. I have always been passionate about technology and programming, which began in high school. My journey through ICT has helped me develop a wide range of skills and a deep understanding of how technology can impact the world.</p>
+                    <p>Outside of tech, I enjoy sports and water activities on the island. These hobbies keep me active and give me a balanced lifestyle, which I believe is essential for success in both my personal and professional life.</p>
+                </section>
+
+                <!-- Skills & Experience Section -->
+                <section id="skills-experience" class="container">
+                    <h2>Skills & Experience</h2>
+                    <p>Over the years, I have developed a robust set of skills through education, internships, and personal projects. My technical knowledge and problem-solving abilities have been refined through hands-on experience.</p>
+                    <h3>Key Skills</h3>
+                    <ul>
+                        <li>Proficient in programming languages: <strong>Java, JavaScript, C++</strong></li>
+                        <li>Experienced in front-end and back-end web development</li>
+                    </ul>
+
+                    <h3>Professional Experience</h3>
+                    <ul>
+                        <li><strong>Full-Stack Junior Developer, Asseco PST</strong> – Worked on statistics and analyses applications to a bank company, gaining hands-on experience with real-world problem solving in a collaborative environment.</li>
+                        <li><strong>Freelance Developer</strong> – Designed and developed websites for small businesses, integrating user-friendly and responsive designs.</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <!-- Characteristics Section -->
+            <section id="characteristics" class="container">
+                <h2>My Characteristics</h2>
+                <ul>
+                    <li>Passionate about technology</li>
+                    <li>Curious and always learning</li>
+                    <li>Resilient and determined</li>
+                    <li>Creative problem-solver</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
     <footer>
         <p>&copy; 2024 Guilherme Henriques. All rights reserved.</p>
     </footer>

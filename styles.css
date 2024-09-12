@@ -15,6 +15,7 @@ header {
     color: #fff;
     padding: 20px 0;
     position: relative; /* Necessário para o posicionamento da navbar */
+    margin-bottom: 50px;
 }
 
 header h1 {
@@ -52,11 +53,52 @@ nav a:hover {
     color: #fff;
 }
 
-/* Principal */
-main {
+/* Container Principal: Sidebar e Conteúdo Principal */
+.main-container {
+    display: flex;
+    align-items: flex-start; /* Alinha o topo da sidebar e do conteúdo */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
     padding: 20px;
-    max-width: 1200px; /* Limita a largura do conteúdo principal */
-    margin: auto; /* Centraliza o conteúdo horizontalmente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 20px;
+    position: sticky; /* A sidebar permanece visível enquanto rola */
+    top: 35px;
+}
+
+.sidebar h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    color: #007BFF;
+}
+
+/* Conteúdo Principal */
+main {
+    flex-grow: 1; /* O conteúdo principal cresce para ocupar o espaço restante */
+    padding: 20px;
 }
 
 main section {
@@ -69,46 +111,211 @@ main section h2 {
     color: #007bff;
 }
 
-/* Dashboard */
-.dashboard {
-    display: flex;
-    flex-direction: column; /* Alinha os containers verticalmente */
-    gap: 20px; /* Espaço entre os containers */
+main section ul {
+    list-style-type: disc;
+    padding-left: 0; /* Remove a indentação padrão */
+    display: inline-block; /* Faz com que a lista seja centralizada */
+    text-align: left; /* Alinha o texto da lista à esquerda */
 }
 
-/* Seções do curso */
-.course {
+main section ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+main section ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+main section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções com Imagens */
+.sections-container {
+    display: flex;
+    justify-content: space-between; /* Espaça as seções igualmente */
+    gap: 20px; /* Espaço entre as seções */
+}
+
+.sections-container section {
+    flex: 1; /* Cada seção ocupa 50% do espaço do container */
+}
+
+.sections-container img {
+    max-width: 100%; /* As imagens não excedem a largura da seção */
+    height: auto;
+}
+
+/* Introdução */
+#introduction {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: left; /* Alinha o texto à esquerda dentro da seção do curso */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.course h3 {
-    margin-top: 0;
+#introduction h1 {
     color: #007bff;
+    font-size: 4em;
 }
 
-/* Row containers for Quarters */
+#introduction p {
+    margin-bottom: 15px;
+}
+
+/* Quarters */
 .quarters-row {
     display: flex;
-    flex-direction: row; /* Garante que os quarters fiquem lado a lado */
-    justify-content: space-between; /* Espaço entre os quarters */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Espaço entre os quarters */
     width: 100%; /* Ocupa toda a largura do container pai */
 }
 
 .quarter {
-    width: 48%; /* Cada quarter ocupa 48% da largura do row */
-    background-color: #fff; /* Fundo branco para cada quarter */
-    border: 1px solid #ddd; /* Borda leve */
-    padding: 10px; /* Espaçamento interno */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
-    border-radius: 8px; /* Cantos arredondados para consistência */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05); /* Sombra sutil para destaque */
+    width: 48%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    text-align: left;
 }
 
-/* Tabela de status dos testes */
+.quarter h2 {
+    color: #007bff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.quarter p {
+    margin-bottom: 15px;
+}
+
+.summary {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Why ICT, ICT World, About Me, Skills & Experience, Characteristics */
+#why-ict, #ict-world, #about-me, #skills-experience, #characteristics {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#why-ict h2, #ict-world h2 {
+    color: #007bff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#why-ict p, #ict-world p {
+    margin-bottom: 15px;
+}
+
+#why-ict img, #ict-world img {
+    width: 100%; /* Imagem ocupa a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Interesting Documents */
+#interesting-documents {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#interesting-documents h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#interesting-documents p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#interesting-documents ul {
+    padding-left: 35px; /* Remove a indentação padrão */
+}
+
+#interesting-documents ul li {
+    margin-bottom: 15px;
+}
+
+#interesting-documents ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#interesting-documents ul li a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ */
+.faq {
+    text-align: left; /* Alinha o texto à esquerda para melhor legibilidade */
+}
+
+.faq h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.faq-item p {
+    margin-bottom: 10px;
+}
+
+/* Listas Ordenadas (FAQ) */
+.faq-item ol {
+    padding-left: 0; /* Remove a indentação padrão */
+    margin: 0;
+    list-style-position: inside; /* Faz com que os números/pontos estejam dentro da caixa de texto */
+}
+
+.faq-item ol li {
+    margin-bottom: 10px;
+    padding-left: 20px; /* Adiciona espaço para a numeração/ponto */
+    text-align: left;
+}
+
+/* Tabela de Status dos Testes */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -141,26 +348,6 @@ table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Resumo do ano */
-.summary {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    text-align: left; /* Alinha o texto à esquerda dentro do resumo */
-    border-radius: 8px; /* Cantos arredondados para consistência */
-}
-
-.summary h3 {
-    margin-top: 0;
-    color: #007bff;
-}
-
-.summary p {
-    margin: 10px 0;
-}
-
 /* Rodapé */
 footer {
     background-color: #007bff;
@@ -174,77 +361,108 @@ footer p {
     font-size: 1em;
 }
 
-/* FAQ (Adaptado do CSS fornecido) */
-.faq {
-    text-align: left; /* Alinha o texto à esquerda para melhor legibilidade */
+/* Blog Post Feed */
+.blog-feed {
+    margin: 20px;
 }
 
-.faq h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #007bff;
-}
-
-.faq-item {
+.blog-post {
     background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    text-align: left; /* Alinha o texto à esquerda dentro da seção de FAQ */
+    box-sizing: border-box;
 }
 
-.faq-item h3 {
-    margin-top: 0;
-    font-size: 1.5em;
+.blog-post h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
     color: #007bff;
 }
 
-.faq-item p {
+.blog-post p {
+    font-size: 1.1em;
     margin-bottom: 10px;
 }
 
-/* Listas Ordenadas (FAQ) */
-.faq-item ol {
-    padding-left: 0; /* Remove a indentação padrão */
-    margin: 0; /* Remove a margem padrão */
-    list-style-position: inside; /* Faz com que os números/pontos estejam dentro da caixa de texto */
-}
-
-.faq-item ol li {
-    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
-    padding-left: 20px; /* Adiciona espaço para a numeração/ponto */
-    text-align: left; /* Alinha o texto à esquerda */
-}
-
-/* Imagens */
-main section img {
-    width: 350px; /* Define a largura da imagem */
-    height: 350px; /* Define a altura da imagem */
-    object-fit: cover; /* Ajusta a imagem para preencher o espaço mantendo a proporção */
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-/* Lista de características */
-main section ul {
-    list-style-type: disc;
-    padding-left: 0; /* Remove a indentação padrão */
-    display: inline-block; /* Faz com que a lista seja centralizada */
-    text-align: left; /* Alinha o texto da lista à esquerda */
-}
-
-main section ul li {
-    margin-bottom: 10px;
-}
-
-/* Links */
-main section ul li a {
+.blog-post a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
 }
 
-main section ul li a:hover {
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #007bff;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Estilo geral para artigos */
+article {
+    margin: 1em 0;
+    padding: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos dos artigos */
+article h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Subtítulos dos artigos */
+article h3 {
+    margin-top: 0.5em;
+    font-size: 1.4em;
+    color: #555;
+}
+
+/* Parágrafos dos artigos */
+article p {
+    line-height: 1.6;
+    color: #555;
+    margin: 0.5em 0;
+}
+
+/* Listas dentro dos artigos */
+article ul {
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+article ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Imagens dentro dos artigos */
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+/* Links dentro dos artigos */
+article a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+article a:hover {
     text-decoration: underline;
 }

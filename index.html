@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>HomePage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,23 +16,69 @@
         <h1>Welcome to my ICT Portfolio</h1>
         <p>Let me tell you why the ICT course is perfect for me!</p>
     </header>
-    <main>
-        <section>
-            <h2>Why HBO-ICT?</h2>
-            <p>I've always had a strong interest in technology, which led me to pursue a programming course in high school. This early exposure helped me develop a solid foundation in coding and problem-solving.</p>
-            <img src="images/ict1.jpg" alt="Image related to ICT">
-            <p>After gaining some experience in the tech industry, I realized that I wanted to deepen my knowledge and skills. This sparked my decision to return to formal education.</p>
-            <p>I chose the HBO-ICT program to enhance my qualifications and expand my opportunities in the field. I believe this program will provide the advanced expertise I need to further my career.</p>
-            <img src="images/ict2.jpg" alt="Another image related to ICT">
-        </section>
-        <section>
-            <h2>Useful Resources</h2>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
             <ul>
-                <li><a href="profile.html">Acess My Personal Profile</a></li>
-                <li><a href="https://hz.nl/en/study-programmes/it" target="_blank">ICT Program</a></li>
+                <li><a href="https://www.hz.nl" target="_blank">HZ Website</a></li>
+                <li><a href="https://www.github.com/ghenriques11" target="_blank">My GitHub Repository</a></li>
+                <li><a href="https://www.instagram.com/guilhermehenriques.11" target="_blank">My Instagram</a></li>
             </ul>
-        </section>
-    </main>
+        </aside>
+
+        <main class="main-content">
+            <!-- Section 1: Introduction -->
+            <section id="introduction">
+                <h2>Hey There, My Name is Guilherme...</h2>
+                <p>Welcome to my ICT Portfolio! Here, you'll find why I chose ICT, how it's impacting the world, and my journey through this exciting field.</p>
+            </section>
+
+            <!-- Container for Section 2 and Section 3 -->
+            <div class="sections-container">
+                <!-- Section 2: Why ICT? -->
+                <section id="why-ict" class="container">
+                    <h2>Why ICT?</h2>
+                    <div class="content">
+                        <p>I've always had a strong passion for technology, which started at a young age. My curiosity about how computers and software worked naturally led me to explore various aspects of technology. In high school, I made a pivotal decision to pursue a programming course, which not only deepened my interest but also provided me with a solid foundation in coding, algorithms, and problem-solving techniques.</p>
+                        <img src="images/ict1.jpg" alt="Image related to ICT">
+                        <p>After high school, I had the opportunity to gain hands-on experience in the tech industry, working on real-world projects. This experience gave me a practical understanding of how technology is applied to solve complex problems in various industries. The rapid advancements in areas like artificial intelligence, cloud computing, and cybersecurity made me eager to deepen my knowledge and stay at the forefront of innovation.</p>
+                    </div>
+                </section>
+
+                <!-- Section 3: ICT in the World -->
+                <section id="ict-world" class="container">
+                    <h2>How ICT Influences the World?</h2>
+                    <div class="content">
+                        <p>Information and Communication Technology (ICT) has become a cornerstone of the modern world, influencing nearly every aspect of our daily lives. From communication to business, healthcare, and education, ICT has revolutionized how we interact and work.</p>
+                        <ul>
+                            <li><strong>Business:</strong> ICT improves efficiency with tools like cloud computing and automation.</li>
+                            <li><strong>Education:</strong> E-learning platforms have made education more accessible globally.</li>
+                            <li><strong>Healthcare:</strong> ICT enables telemedicine, improving care quality and accessibility.</li>
+                            <li><strong>Society:</strong> ICT fosters social movements and activism, creating global connectivity.</li>
+                        </ul>
+                        <img src="images/ict2.jpg" alt="Image representing ICT's global influence">
+                        <p>ICT will continue to drive innovation, growth, and transformation in various fields, shaping the future of our world.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Section 4: Interesting Documents -->
+            <section id="interesting-documents" class="container">
+                <h2>Interesting Documents</h2>
+                <div class="content">
+                    <p>Here are some insightful documents and articles that explore various aspects of ICT and technology. These resources can help you dive deeper into this exciting field.</p>
+                    <ul>
+                        <li><a href="https://www.weforum.org/agenda/2020/11/heres-how-technology-has-changed-and-changed-us-over-the-past-20-years/" target="_blank">World Economic Forum - How Technology Has Changed the World Since 2000</a></li>
+                        <li><a href="https://www.weforum.org/publications/top-10-emerging-technologies-2024/" target="_blank">World Economic Forum - Top 10 Emerging Technologies of 2024</a></li>
+                        
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
     <footer>
         <p>&copy; 2024 Guilherme Henriques. All rights reserved.</p>
     </footer>
