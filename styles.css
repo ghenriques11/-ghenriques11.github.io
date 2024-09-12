@@ -466,3 +466,19 @@ article a {
 article a:hover {
     text-decoration: underline;
 }
+
+.scroll-to-top {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
